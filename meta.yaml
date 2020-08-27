@@ -1,0 +1,19 @@
+package:
+        name: pnapi
+        version: 4.02
+
+source:
+        path: ./pnapi-4.02
+
+build:
+        skip: True  # [win]
+        number: 0
+
+requirements:
+        build:
+                - {{ compiler('c') }}
+                - {{ compiler('cxx') }}
+                - make                    # [linux]
+about:
+        home: https://github.com/jakobandersen/mod
+
